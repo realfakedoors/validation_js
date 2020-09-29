@@ -5,12 +5,30 @@
   
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
   
   <script src="script.js" defer></script>
   
   <title>Sign-Up Form</title>
 </head>
 <body>
-  
+  <h1 class="form-title">New Account</h1>
+  <form class="signup-form">
+    <div class="labels">
+      <label for="email">Email</label>
+      <label for="country">Country</label>
+      <label for="zipcode">Zip Code</label>
+      <label for="password">Password</label>
+      <label for="confirm">Confirm Password</label>
+    </div>
+    <div class="fields">
+      <input type="email" id="email">
+      <input type="select" id="country">
+      <input type="text" id="zipcode">
+      <input type="password" id="password">
+      <input type="password" id="confirm">
+    </div>
+    <input type="button" id="submit" value="Sign Up">
+  </form>
 </body>
 </html>

@@ -1,0 +1,110 @@
+body {
+  font-family: "Secular One", sans-serif;
+}
+
+.signup-form {
+  position: relative;
+
+  width: 500px;
+  height: 180px;
+  margin: auto;
+
+  display: flex;
+
+  text-align: right;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.form-title {
+  margin: 120px auto 30px;
+
+  font-size: 44px;
+  text-align: center;
+}
+
+.labels,
+.fields {
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 50%;
+}
+
+input {
+  height: 33px;
+  margin-bottom: 3px;
+
+  font-size: 16px;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+#submit {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+
+  height: 40px;
+  width: 150px;
+
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+}
+
+#submit:hover {
+  background-color: #777;
+  color: white;
+}
+
+/* Colors by GoldenHuesinBlue at COLOURlovers: 
+https://www.colourlovers.com/palette/4764843/The_Best_Sunset*/
+.fields *:nth-child(1) {
+  border: 3px solid #1f0c66;
+}
+
+.labels *:nth-child(1) {
+  color: #1f0c66;
+}
+
+.fields *:nth-child(2) {
+  border: 3px solid #8d709e;
+}
+
+.labels *:nth-child(2) {
+  color: #8d709e;
+}
+
+.fields *:nth-child(3) {
+  border: 3px solid #e99229;
+}
+
+.labels *:nth-child(3) {
+  color: #e99229;
+}
+
+.fields *:nth-child(4) {
+  border: 3px solid #f76623;
+}
+
+.labels *:nth-child(4) {
+  color: #f76623;
+}
+
+.fields *:nth-child(5) {
+  border: 3px solid #3d1a3b;
+}
+
+.labels *:nth-child(5) {
+  color: #3d1a3b;
+}
+
+/* #1f0c66 dark blue || #8d709e blueberry waffle || #e99229 golden 
+|| #f76623 tangerine || #3d1a3b novella purple */
