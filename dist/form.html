@@ -13,7 +13,7 @@
 </head>
 <body>
   <h1 class="form-title">New Account</h1>
-  <form class="signup-form">
+  <form id="signup-form" novalidate>
     <div class="labels">
       <label for="email">Email</label>
       <label for="country">Country</label>
@@ -22,13 +22,18 @@
       <label for="confirm">Confirm Password</label>
     </div>
     <div class="fields">
-      <input type="email" id="email">
-      <input type="select" id="country">
-      <input type="text" id="zipcode">
-      <input type="password" id="password">
-      <input type="password" id="confirm">
+      <input type="email" id="email" required>
+      <select name="country" id="country" form="signup-form" required>
+        <option id="blank-option">
+      </select>
+      <input type="number" id="zipcode" required>
+      <input type="password" id="password" minlength="5" required>
+      <input type="password" id="confirm" minlength="5" required>
     </div>
     <input type="button" id="submit" value="Sign Up">
   </form>
+  <div id="errors">
+    <!-- Error Messages -->
+  </div>
 </body>
 </html>
